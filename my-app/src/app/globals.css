@@ -1,0 +1,19 @@
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+.MainLayout {
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    padding: 0 8rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+html[data-theme='dark'] button {
+    background-color: black;
+    color: white;
+  }
+  
