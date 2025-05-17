@@ -2,6 +2,7 @@ import './globals.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import About from '../components/About';
+import Skills from '../components/Skills';
 import ThemeProvider from '../components/ThemeProvider';
 
 export const metadata = {
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
               {children}              
             </div>
             <About />
+            <Skills />
             <Footer />
           </main>
         </ThemeProvider>
