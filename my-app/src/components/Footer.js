@@ -1,10 +1,10 @@
 const Footer = () => {
     return (
-      <footer>
-        <p>© 2025 Your Name. All Rights Reserved.</p>
+      <footer className="text-center py-4">
+        <p>© 2025 Rong Gang Xu. All Rights Reserved.</p>
       </footer>
     );
   };
   
-  export default Footer;
+export default Footer;
   
