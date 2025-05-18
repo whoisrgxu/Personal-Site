@@ -2,12 +2,17 @@
 
 import './page.module.css';
 import BeautyButton from '@/components/BeautyButton';
+import About from '@/components/About';
+import Skills from '@/components/Skills';
+import Projects from '@/components/Projects';
+import Footer from '@/components/Footer';
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 import MouseOutlinedIcon from '@mui/icons-material/MouseOutlined';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
+import Contact from '@/components/Contact';
 
 export default function Home() {
   const { theme, resolvedTheme } = useTheme();
@@ -22,50 +27,67 @@ export default function Home() {
   const currentTheme = resolvedTheme || 'light';
 
   return (
-    <div className="lg:h-screen">
-      <div className="flex justify-center items-center">
-        <div className="w-11/20 mt-12 relative flex flex-col z-10">
-          {/* Glow background */}
-          <div className="absolute top-3/4 left-0 -translate-y-1/2 -translate-x-1/2 w-[32vw] h-[27vh] bg-gradient-to-bl from-sky-400 via-blue-500 to-indigo-50 opacity-50 blur-[130px] rounded-full pointer-events-none z-0"></div>
-          {/* Text and Button */}
-          <div className="relative z-10">
-            <p className="text-base leading-relaxed">
-              <span className="opacity-70">Hello! I am</span><br />
-              <span className="text-3xl font-bold">Roger Xu</span> <br />
-              <span className="text-pink-600">
-                Software Engineer <FiberManualRecordIcon fontSize="inherit" /> Systems Developer
-              </span>
-              <br /><br />
-              I'm a passionate Software Engineer based in Toronto, Canada. I have a strong background in computer science and software development, with a focus on building scalable and efficient systems.
-              <br /><br />
-              I enjoy working on challenging problems and continuously learning new technologies to improve my skills. In my free time, I like to explore new programming languages and frameworks, as well as contribute to open-source projects.
-              <br /><br />
-              I am currently looking for new opportunities to apply my skills and make a positive impact in the tech industry. If you are interested in collaborating or have any questions, feel free to reach out!
-            </p>
+    <div>
+      <div className="lg:h-screen">
+        <div className="flex justify-center items-center">
+          <div className="w-11/20 mt-12 relative flex flex-col z-10">
+            {/* Glow background */}
+            <div className="absolute top-3/4 left-0 -translate-y-1/2 -translate-x-1/2 w-[32vw] h-[27vh] bg-gradient-to-bl from-sky-400 via-blue-500 to-indigo-50 opacity-50 blur-[130px] rounded-full pointer-events-none z-20"></div>
+            {/* Text and Button */}
+            <div className="relative z-10">
+              <p className="text-base leading-relaxed">
+                <span className="opacity-70">Hello! I am</span><br />
+                <span className="text-3xl font-bold">Roger Xu</span> <br />
+                <span className="text-pink-600">
+                  Software Engineer <FiberManualRecordIcon fontSize="inherit" /> Systems Developer
+                </span>
+                <br /><br />
+                I'm a passionate Software Engineer based in Toronto, Canada. I have a strong background in computer science and software development, with a focus on building scalable and efficient systems.
+                <br /><br />
+                I enjoy working on challenging problems and continuously learning new technologies to improve my skills. In my free time, I like to explore new programming languages and frameworks, as well as contribute to open-source projects.
+                <br /><br />
+                I am currently looking for new opportunities to apply my skills and make a positive impact in the tech industry. If you are interested in collaborating or have any questions, feel free to reach out!
+              </p>
 
-            <BeautyButton text="Get my resume"/>
+              <BeautyButton theme={currentTheme} text="Get my resume"/>
+            </div>
+          </div>  
+
+          <div className="w-9/20 flex justify-center items-center mt-16 relative">
+          <div className="absolute inset-0 -m-12 rounded-full bg-gradient-to-br from-blue-500 via-pink-500 to-purple-500 opacity-35 blur-[160px] pointer-events-none z-0"></div>
+            <Image
+              src="/Roger.jpeg"
+              alt="Roger's Photo"
+              width={275}
+              height={415}
+              className="relative object-cover transform z-10 border-rounded-lg shadow-lg shadow-blue-300 transition-transform duration-300 hover:scale-105"
+            />
           </div>
-        </div>  
-
-        <div className="w-9/20 flex justify-center items-center mt-16 relative">
-        <div class="absolute inset-0 -m-12 rounded-full bg-gradient-to-br from-blue-500 via-pink-500 to-purple-500 opacity-35 blur-[160px] pointer-events-none z-0"></div>
-          <Image
-            src="/Roger.jpeg"
-            alt="Roger's Photo"
-            width={275}
-            height={415}
-            className="relative object-cover transform z-10 border-rounded-lg shadow-lg shadow-blue-300 transition-transform duration-300 hover:scale-105"
-          />
+        </div>
+        <div className="hidden absolute bottom-20 left-0 right-0 lg:block">      
+          <div className="text-pink-600 flex items-center text-4xl justify-center mt-10">
+            <MouseOutlinedIcon fontSize='inherit'/>
+          </div>
+          <div className="text-pink-600 text-5xl animate-bounce flex flex-col items-center">
+            <KeyboardDoubleArrowDownIcon fontSize='inherit'/>
+          </div>
         </div>
       </div>
-      <div className="hidden absolute bottom-20 left-0 right-0 lg:block">      
-        <div items-center className="text-pink-600 flex text-4xl justify-center mt-10">
-          <MouseOutlinedIcon fontSize='inherit'/>
-        </div>
-        <div className="text-pink-600 text-5xl animate-bounce flex flex-col items-center">
-          <KeyboardDoubleArrowDownIcon fontSize='inherit'/>
-        </div>
-      </div>
+      <section id="about" className="scroll-mt-28">
+        <About />
+      </section>
+      <section id="skills" className="scroll-mt-28">
+        <Skills />
+      </section>
+      <section id="projects" className="scroll-mt-28">
+        <Projects />
+      </section>
+      <section id="contact" className="scroll-mt-28">
+        <Contact />
+      </section>
+      <section className="scroll-mt-28">
+        <Footer />
+      </section>
     </div>
   );
 }

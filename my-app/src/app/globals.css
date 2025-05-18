@@ -17,3 +17,6 @@ html[data-theme='dark'] button {
     color: white;
   }
   
+html {
+  scroll-behavior: smooth;
+}
