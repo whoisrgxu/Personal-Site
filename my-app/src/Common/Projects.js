@@ -19,20 +19,6 @@ const projects = [
     Description: "A web poker game that tests your memory through matching cards.",
     Link: "https://memory-fun.onrender.com",
     Image: "/MemoryFun.png",
-  },
-  {
-    Title: "Front End",
-    MadeWith: [],
-    Description: "A web application that allows users to create and manage their tasks.",
-    Link: "",
-    Image: "/roger.png",
-  },
-  {
-    Title: "Front End",
-    MadeWith: [],
-    Description: "A web application that allows users to create and manage their tasks.",
-    Link: "",
-    Image: "/roger.png",
   }
 ];
 
