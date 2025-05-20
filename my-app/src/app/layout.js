@@ -1,10 +1,8 @@
 import './globals.css';
 import Header from '../components/Header';
-import Footer from '../components/Footer';
-import About from '../components/About';
-import Skills from '../components/Skills';
-import Projects from '../components/Projects';
 import ThemeProvider from '../components/ThemeProvider';
+import FancyCursor from '../components/FancyCursor';
+
 
 export const metadata = {
   title: 'My Personal Site',
@@ -17,6 +15,7 @@ export default function RootLayout({ children }) {
       <body>
         <ThemeProvider>
           <main className="MainLayout">
+            <FancyCursor/>
             <Header/>
             <div >
               {children}              

@@ -7,7 +7,7 @@ import Skills from '@/components/Skills';
 import Projects from '@/components/Projects';
 import Footer from '@/components/Footer';
 import { useTheme } from 'next-themes';
-import { useEffect, useState } from 'react';
+import { useEffect, useState} from 'react';
 import Image from 'next/image';
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 import MouseOutlinedIcon from '@mui/icons-material/MouseOutlined';
@@ -26,6 +26,8 @@ export default function Home() {
 
   const currentTheme = resolvedTheme || 'light';
 
+
+
   return (
     <div>
       <div className="lg:h-screen">
@@ -42,11 +44,8 @@ export default function Home() {
                   Software Engineer <FiberManualRecordIcon fontSize="inherit" /> Systems Developer
                 </span>
                 <br /><br />
-                I'm a passionate Software Engineer based in Toronto, Canada. I have a strong background in computer science and software development, with a focus on building scalable and efficient systems.
-                <br /><br />
-                I enjoy working on challenging problems and continuously learning new technologies to improve my skills. In my free time, I like to explore new programming languages and frameworks, as well as contribute to open-source projects.
-                <br /><br />
-                I am currently looking for new opportunities to apply my skills and make a positive impact in the tech industry. If you are interested in collaborating or have any questions, feel free to reach out!
+                I'm a passionate Software Engineer based in Toronto, Canada, with a background that blends business and technology. I focus on building practical, user-focused software and applications that solve real-world problems and deliver meaningful impact. In my free time, I enjoy exploring new technologies and tools, and occasionally contribute to open-source projects.
+                I'm currently seeking new opportunities to apply my skills and contribute to impactful work in the tech industry. If you're interested in connecting or collaborating, feel free to reach out!
               </p>
 
               <BeautyButton theme={currentTheme} text="Get my resume"/>
