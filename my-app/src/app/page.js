@@ -44,8 +44,8 @@ export default function Home() {
                   Software Engineer <FiberManualRecordIcon fontSize="inherit" /> Systems Developer
                 </span>
                 <br /><br />
-                I'm a passionate Software Engineer based in Toronto, Canada, with a background that blends business and technology. I focus on building practical, user-focused software and applications that solve real-world problems and deliver meaningful impact. In my free time, I enjoy exploring new technologies and tools, and occasionally contribute to open-source projects.
-                I'm currently seeking new opportunities to apply my skills and contribute to impactful work in the tech industry. If you're interested in connecting or collaborating, feel free to reach out!
+                I&#39;m a passionate Software Engineer based in Toronto, Canada, with a background that blends business and technology. I focus on building practical, user-focused software and applications that solve real-world problems and deliver meaningful impact. In my free time, I enjoy exploring new technologies and tools, and occasionally contribute to open-source projects.
+                I&#39;m currently seeking new opportunities to apply my skills and contribute to impactful work in the tech industry. If you&#39;re interested in connecting or collaborating, feel free to reach out!
               </p>
 
               <BeautyButton theme={currentTheme} text="Get my resume"/>

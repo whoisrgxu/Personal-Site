@@ -14,7 +14,7 @@
                 </div>
                 <div>
                     <div className="text-3xl text-center text-pink-600">Future</div>
-                    <div className="p-4 text-center text-lg">Looking ahead, I'm excited about the future of programming and the endless opportunities it presents. I'm confident that my passion for the field, coupled with my skills, will enable me to make meaningful contributions to the industry in the years to come.</div>
+                    <div className="p-4 text-center text-lg">Looking ahead, I&#39;m excited about the future of programming and the endless opportunities it presents. I&#39;m confident that my passion for the field, coupled with my skills, will enable me to make meaningful contributions to the industry in the years to come.</div>
                 </div>
             </div>
         </div>
