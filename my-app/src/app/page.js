@@ -32,11 +32,10 @@ export default function Home() {
     <div>
       <div className="lg:h-screen">
         <div className="flex justify-center items-center">
-          <div className="w-11/20 mt-12 relative flex flex-col z-10">
-            {/* Glow background */}
-            <div className="absolute top-3/4 left-0 -translate-y-1/2 -translate-x-1/2 w-[32vw] h-[27vh] bg-gradient-to-bl from-sky-400 via-blue-500 to-indigo-50 opacity-50 blur-[130px] rounded-full pointer-events-none z-20"></div>
+          <div className="w-11/20 mt-12 relative flex flex-col z-10" >
+            <div className="absolute top-3/4 left-0 -translate-y-1/2 -translate-x-1/2 w-[32vw] h-[27vh] bg-gradient-to-bl from-sky-400 via-blue-500 to-indigo-50 blur-[130px] rounded-full pointer-events-none z-20 opacity-0 fade-in-50" style={{"animationDelay": "0.5s"}}></div>
             {/* Text and Button */}
-            <div className="relative z-10">
+            <div className="relative z-10 opacity-0 fade-in" style={{"animationDelay": "1.5s"}}>
               <p className="text-base leading-relaxed">
                 <span className="opacity-70">Hello! I am</span><br />
                 <span className="text-3xl font-bold">Roger Xu</span> <br />
@@ -53,13 +52,13 @@ export default function Home() {
           </div>  
 
           <div className="w-9/20 flex justify-center items-center mt-16 relative">
-          <div className="absolute inset-0 -m-12 rounded-full bg-gradient-to-br from-blue-500 via-pink-500 to-purple-500 opacity-35 blur-[160px] pointer-events-none z-0"></div>
+            <div className="absolute inset-0 -m-12 rounded-full bg-gradient-to-br from-blue-500 via-pink-500 to-purple-500 blur-[160px] pointer-events-none z-0 opacity-0 fade-in-35" style={{"animationDelay": "0.5s"}}></div>
             <Image
               src="/Roger.jpeg"
               alt="Roger's Photo"
               width={275}
               height={415}
-              className="relative object-cover transform z-10 border-rounded-lg shadow-lg shadow-blue-300 transition-transform duration-300 hover:scale-105"
+              className="relative object-cover transform z-10 border-rounded-lg shadow-lg shadow-blue-300 transition-transform duration-300 hover:scale-105 opacity-0 fade-in" style={{"animationDelay": "1.5s"}}
             />
           </div>
         </div>

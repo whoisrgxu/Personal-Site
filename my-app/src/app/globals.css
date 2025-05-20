@@ -20,3 +20,31 @@ html[data-theme='dark'] button {
 html {
   scroll-behavior: smooth;
 }
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.fade-in-50 {
+  animation: fadeIn-50 1s ease-in-out forwards;
+}
+
+.fade-in-35 {
+  animation: fadeIn-35 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeIn-50 {
+  0% { opacity: 0; }
+  100% { opacity: 0.5; }
+}
+
+@keyframes fadeIn-35 {
+  0% { opacity: 0; }
+  100% { opacity: 0.35; }
+}
+
