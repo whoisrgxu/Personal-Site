@@ -9,7 +9,7 @@ export default function Skills() {
           return (
             <div className="mt-10" key={index}>
               <div className="text-3xl mb-4">{categoryObj.category}</div>
-              <div className="gap-4 flex flex-wrap">
+              <div className="gap-4 flex flex-wrap" data-aos="slide-right">
                 {categoryObj.skills.map((skill, i) => (
                   <button
                     key={i}
