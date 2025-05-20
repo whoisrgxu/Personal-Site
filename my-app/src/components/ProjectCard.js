@@ -8,7 +8,7 @@ export default function ProjectCard({index, project}) {
     const hasGlow = index % 2 === 0? true : false;
     return (
 
-        <div className="relative w-full flex flex-col items-center">
+        <div className="relative w-full flex flex-col items-center" data-aos="slide-up">
             {hasGlow && (
             <div className="absolute top-[90%] left-0 -translate-y-1/2 -translate-x-1/2 w-[20vw] h-[30vh] bg-gradient-to-br from-sky-400 via-blue-500 to-indigo-50 opacity-60 blur-[130px] rounded-full pointer-events-none z-20"></div>)
             }
