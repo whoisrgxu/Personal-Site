@@ -11,7 +11,7 @@ const projects = [
     Title: "Classic Puzzle Game",
     MadeWith: ["HTML", "CSS", "JavaScript", "React", "Node.js"],
     Description: "A web application that allows users to create and manage their tasks.",
-    Link: "https://nupuzz.onrender.com",
+    Link: "https://nu-puzz.vercel.app",
     RepoLink: "https://github.com/whoisrgxu/NuPuzz",
     Image: "/NuPuzz.png",
   },
@@ -19,7 +19,7 @@ const projects = [
     Title: "Memory Fun Poker Game",
     MadeWith: [],
     Description: "A web poker game that tests your memory through matching cards.",
-    Link: "https://memory-fun.onrender.com",
+    Link: "https://memory-fun.vercel.app/",
     RepoLink: "https://github.com/whoisrgxu/Memory-Fun",
     Image: "/MemoryFun.png",
   }
