@@ -6,7 +6,7 @@
             <div className="grid grid-cols-3 gap-20">
                 <div data-aos="fade-right">
                     <div className="text-3xl text-center text-pink-600">Offer job opportunity</div>
-                    <div className="p-4 text-center text-lg">Vam open to discussing potential job opportunities or collaborations. With experience in web development and software engineering, I am interested in roles that allow me to work on exciting and challenging projects.If you have a project or role in mind, feel free to reach out and let&#39;s discuss!</div>
+                    <div className="p-4 text-center text-lg">I am open to discussing potential job opportunities or collaborations. With experience in web development and software engineering, I am interested in roles that allow me to work on exciting and challenging projects.If you have a project or role in mind, feel free to reach out and let&#39;s discuss!</div>
                 </div>
                 <div data-aos="fade-right" data-aos-delay="300">
                     <div className="text-3xl text-center text-pink-600" >Connect</div>

@@ -7,7 +7,7 @@ import Skills from '@/components/Skills';
 import Projects from '@/components/Projects';
 import Footer from '@/components/Footer';
 import { useTheme } from 'next-themes';
-import { useEffect, useState} from 'react';
+import { useEffect, useState, useCallback} from 'react';
 import Image from 'next/image';
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 import MouseOutlinedIcon from '@mui/icons-material/MouseOutlined';
@@ -21,11 +21,14 @@ export default function Home() {
   useEffect(() => {
     setMounted(true);
   }, []);
+  const playClick = useCallback(() => {
+    const audio = new Audio('/mouse-click.mp3');
+    audio.play();
+  }, []);
 
   if (!mounted) return null; // avoid hydration mismatch
 
   const currentTheme = resolvedTheme || 'light';
-
 
 
   return (
@@ -66,7 +69,7 @@ export default function Home() {
         <div className="text-pink-600 flex items-center text-4xl justify-center mt-10">
           <div className="relative inline-block group">
             <div className="absolute inset-0 rounded-full blur-md bg-pink-600 opacity-0 group-hover:opacity-40 transition duration-300 z-0"></div>
-            <a href="#about" className="relative z-10">
+            <a href="#about" className="relative z-10" onClick={() => playClick()}>
               <MouseOutlinedIcon fontSize="inherit" />
             </a>
           </div>

@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useTheme } from 'next-themes';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback} from 'react';
 import BedtimeIcon from '@mui/icons-material/Bedtime';
 import WbSunnyIcon from '@mui/icons-material/WbSunny';
 import '../app/globals.css';
@@ -15,6 +15,11 @@ const Header = () => {
     setMounted(true); // prevent mismatch between server and client render
   }, []);
 
+  const playClick = useCallback(() => {
+    const audio = new Audio('/mouse-click.mp3');
+    audio.play();
+  }, []);
+
   const currentTheme = theme === 'system' ? systemTheme : theme;
   if (!mounted) return null; // avoid hydration mismatch
   return (
@@ -22,11 +27,11 @@ const Header = () => {
       <nav>
         <ul className="flex items-center gap-4 justify-between list-none">
           <li className="font-bold basis-1/2 text-lg shrink-0">Rong Gang (Roger) Xu</li>
-          <li><Link href="#about" className="no-underline hover:underline visited:text-inherit">About</Link></li>
-          <li><Link href="#skills" className="no-underline hover:underline visited:text-inherit">Skills</Link></li>
-          <li><Link href="#projects" className="no-underline hover:underline visited:text-inherit">Projects</Link></li>
-          <li><Link href="#contact" className="no-underline hover:underline visited:text-inherit">Contact</Link></li>
-          <li><Link href="/Resume" className="no-underline hover:underline visited:text-inherit">Resume</Link></li>
+          <li><Link href="#about" onClick={() => playClick()} className="no-underline hover:underline visited:text-inherit">About</Link></li>
+          <li><Link href="#skills" onClick={() => playClick()} className="no-underline hover:underline visited:text-inherit">Skills</Link></li>
+          <li><Link href="#projects" onClick={() => playClick()} className="no-underline hover:underline visited:text-inherit">Projects</Link></li>
+          <li><Link href="#contact" onClick={() => playClick()} className="no-underline hover:underline visited:text-inherit">Contact</Link></li>
+          <li><a href="/Resume.pdf" onClick={() => playClick()} className="no-underline hover:underline visited:text-inherit">Resume</a></li>
           <li>
               <button
                 onClick={() => setTheme(currentTheme === 'dark' ? 'light' : 'dark')}
