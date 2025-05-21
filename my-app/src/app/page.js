@@ -37,7 +37,7 @@ export default function Home() {
 
   return (
     <div>
-      <div className="lg:h-screen relative">
+      <div className="lg:h-screen relative mb-10">
         <div className="flex flex-col lg:flex-row justify-center items-center mb-20 lg:mb-0">
           <div className="lg:w-11/20 mt-12 relative flex flex-col z-10" >
             <div className="absolute top-3/4 left-0 -translate-y-1/2 -translate-x-1/2 w-[32vw] h-[27vh] bg-gradient-to-bl from-sky-400 via-blue-500 to-indigo-50 blur-[130px] rounded-full pointer-events-none z-20 opacity-0 fade-in-50" style={{"animationDelay": "0.5s"}}></div>
