@@ -49,7 +49,7 @@ export default function Home() {
                 I&#39;m currently seeking new opportunities to apply my skills and contribute to impactful work in the tech industry. If you&#39;re interested in connecting or collaborating, feel free to reach out!
               </p>
 
-              <BeautyButton theme={currentTheme} text="Get my resume"/>
+              <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" className='no-underline'><BeautyButton theme={currentTheme} text="Get my resume"/></a>
             </div>
           </div>  
 
@@ -77,7 +77,7 @@ export default function Home() {
             <div className="relative inline-block group">
               <div className="absolute inset-2 rounded-full blur-lg bg-pink-600 opacity-0 group-hover:opacity-30 transition duration-300 z-0"></div>
               <a href="#about" className="relative z-10" onClick={() => playClick()}>
-              <KeyboardDoubleArrowDownIcon fontSize='inherit'/>
+                <KeyboardDoubleArrowDownIcon fontSize='inherit'/>
               </a>
             </div>
           </div>
