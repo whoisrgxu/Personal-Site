@@ -26,24 +26,28 @@ export default function ProjectCard({index, project}) {
                     </div>
                     <div className="text-lg">{project.Description}</div>
                     <div className="flex gap-4">
-                        <BeautyButton
-                            theme="light"
-                            text={
-                                <>
-                                <ExitToAppIcon className="mr-1" />
-                                    Live
-                                </>
-                            }
-                        />
-                        <BeautyButton
-                            theme="light"
-                            text={
-                                <>
-                                <GitHubIcon className="mr-1" />
-                                    Code
-                                </>
-                            }
-                        />
+                        <a href={project.Link} target="_blank" rel="noopener noreferrer" className="no-underline">
+                            <BeautyButton
+                                theme="light"
+                                text={
+                                    <>
+                                    <ExitToAppIcon className="mr-1" />
+                                        Live
+                                    </>
+                                }
+                            />
+                        </a>
+                        <a href={project.RepoLink} target="_blank" rel="noopener noreferrer" className="no-underline">
+                            <BeautyButton
+                                theme="light"
+                                text={
+                                    <>
+                                    <GitHubIcon className="mr-1" />
+                                        Code
+                                    </>
+                                }
+                            />
+                        </a>
                     </div>
                 </div>
             </div>
