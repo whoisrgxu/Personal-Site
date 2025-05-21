@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning>
       <body>
         <ThemeProvider>
-          <main className="MainLayout">
+          <main className="relative w-full max-w-[1920px] px-8 md:px-16 lg:px-32 mx-auto overflow-hidden">
             <FancyCursor/>
             <Header/>
             <div >
