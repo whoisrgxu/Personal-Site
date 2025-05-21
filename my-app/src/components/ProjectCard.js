@@ -5,13 +5,16 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 export default function ProjectCard({index, project}) {
 
-    const hasGlow = index % 2 === 0? true : false;
+    const hasGlowLeft = index % 2 === 0? true : false;
     return (
 
-        <div className="relative w-full flex flex-col items-center" data-aos="slide-up">
-            {hasGlow && (
-            <div className="absolute top-[90%] left-0 -translate-y-1/2 -translate-x-1/2 w-[20vw] h-[30vh] bg-gradient-to-br from-sky-400 via-blue-500 to-indigo-50 opacity-60 blur-[130px] rounded-full pointer-events-none z-20"></div>)
+        <div className="relative w-full flex flex-col items-center" data-aos="fade-up">
+            {hasGlowLeft && (
+            <div className="absolute top-[90%] left-0 -translate-y-1/2 -translate-x-1/2 w-[20vw] h-[30vh] bg-gradient-to-br from-sky-400 via-blue-500 to-indigo-50 opacity-60 blur-[150px] rounded-full pointer-events-none z-20"></div>)
             }
+            {!hasGlowLeft && (
+            <div className="absolute top-[90%] right-[-20%] translate-x-0 -translate-y-1/2 w-[20vw] h-[30vh] bg-gradient-to-br from-blue-500 via-pink-500 to-purple-500 opacity-60 blur-[150px] rounded-full pointer-events-none z-20"></div>)
+            }            
             <div className="grid w-full grid-cols-2 gap-10">
                 <div className="">
                     <ProjectImageFrame project={project}/>
