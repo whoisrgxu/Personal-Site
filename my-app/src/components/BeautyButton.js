@@ -1,14 +1,17 @@
 import { useCallback } from 'react';
+import {useSound} from '@/components/SoundProvider';
 
 
 export default function BeautyButton({theme, text}) {
 
+    const { muted } = useSound();
     const bgColor = theme === 'light' ? 'bg-white/50' : 'bg-black/50';
 
     const playClick = useCallback(() => {
+        if (muted) return;
         const audio = new Audio('/mouse-click.mp3');
         audio.play();
-    }, []);
+    }, [muted]);
     return (
         <div className="relative inline-block mt-5 bg-inherit">
             <div className="absolute z-1 inset-0 bg-pink-600 transition-transform duration-300"></div>

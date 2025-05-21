@@ -6,19 +6,31 @@ import { useEffect, useState, useCallback} from 'react';
 import BedtimeIcon from '@mui/icons-material/Bedtime';
 import WbSunnyIcon from '@mui/icons-material/WbSunny';
 import '../app/globals.css';
+import MuteButton from './SoundButton';
+import { useSound } from './SoundProvider';
+
 
 const Header = () => {
   const {theme, setTheme, systemTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+
+  const { muted } = useSound();
 
   useEffect(() => {
     setMounted(true); // prevent mismatch between server and client render
   }, []);
 
   const playClick = useCallback(() => {
-    const audio = new Audio('/mouse-click.mp3');
+      if (muted) return;
+      const audio = new Audio('/mouse-click.mp3');
+      audio.play();
+  }, [muted]);
+
+  const playLightSwitch = useCallback(() => {
+    if (muted) return;
+    const audio = new Audio('/light-switch.mp3');
     audio.play();
-  }, []);
+  }, [muted]);
 
   const currentTheme = theme === 'system' ? systemTheme : theme;
   if (!mounted) return null; // avoid hydration mismatch
@@ -34,11 +46,15 @@ const Header = () => {
           <li><a href="/Resume.pdf" onClick={() => playClick()} className="no-underline hover:underline visited:text-inherit">Resume</a></li>
           <li>
               <button
-                onClick={() => setTheme(currentTheme === 'dark' ? 'light' : 'dark')}
+                onClick={() => {
+                  setTheme(currentTheme === 'dark' ? 'light' : 'dark')
+                  playLightSwitch();
+                }}
                 className="px-3 py-1 rounded"
               >
-                {currentTheme === 'dark' ? <WbSunnyIcon/>: <BedtimeIcon/>}
+                {currentTheme === 'dark' ? <BedtimeIcon/> : < WbSunnyIcon/>}
               </button>
+              <MuteButton/>
           </li>
         </ul>
       </nav>

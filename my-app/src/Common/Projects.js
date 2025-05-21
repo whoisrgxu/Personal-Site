@@ -17,7 +17,7 @@ const projects = [
   },
   {
     Title: "Memory Fun Poker Game",
-    MadeWith: [],
+    MadeWith: ["React", "Node.js", "Next.js", "Bootstrap"],
     Description: "A web poker game that tests your memory through matching cards.",
     Link: "https://memory-fun.vercel.app/",
     RepoLink: "https://github.com/whoisrgxu/Memory-Fun",

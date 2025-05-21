@@ -13,18 +13,22 @@ import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 import MouseOutlinedIcon from '@mui/icons-material/MouseOutlined';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 import Contact from '@/components/Contact';
+import {useSound} from '@/components/SoundProvider';
 
 export default function Home() {
   const { theme, resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  const { muted } = useSound();
 
   useEffect(() => {
     setMounted(true);
   }, []);
   const playClick = useCallback(() => {
+
+    if (muted) return;
     const audio = new Audio('/mouse-click.mp3');
     audio.play();
-  }, []);
+  }, [muted]);
 
   if (!mounted) return null; // avoid hydration mismatch
 
