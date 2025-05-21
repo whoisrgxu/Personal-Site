@@ -21,11 +21,11 @@ import { useEffect } from 'react';
             <div className="grid grid-cols-3 gap-20">
                 <div data-aos="slide-right">
                     <div className="text-3xl text-center text-pink-600">Past</div>
-                    <div className="p-4 text-center text-lg">I discovered my passion for programming when I was just 14 years old. At first, it was just a hobby, but I quickly became interested in web development and the creative possibilities it offered. Over the years, I continued to develop my skills and fell more in love with building websites.</div>
+                    <div className="p-4 text-center text-lg"> My career path prior to programming was built upon financial and business sectors until I came across Python which brought me into the world of technologies. What began as a hobby quickly grew into a strong passion for programming. Over the years of studying computer programming, I have developed a diverse set of skills for solving real-world problems by combining my technical abilities with cross-sector business experience.</div>
                 </div>
                 <div data-aos="slide-right" data-aos-delay="150">
                     <div className="text-3xl text-center text-pink-600">Present</div>
-                    <div className="p-4 text-center text-lg">Currently, I am a software engineering student at Mutah University. I am also a Software Development Engineer intern at Amazon, where I gain valuable experience in a professional setting. Additionally, I am the founder of Arabic-Poetry.net, a platform dedicated to Arabic poetry.</div>
+                    <div className="p-4 text-center text-lg">Building on the foundation of my passion and training, I recently completed a co-op as a System Developer at HOOPP, where I applied my skills in a real-world, enterprise-level environment.Now, I&#39;m actively seeking new opportunities where I can grow as a developer and contribute meaningfully to a team. In the meantime, I continue to expand my knowledge through self-directed learning, sharpening my technical expertise and staying current with modern development tools and practices.</div>
                 </div>
                 <div data-aos="slide-right" data-aos-delay="300">
                     <div className="text-3xl text-center text-pink-600">Future</div>
