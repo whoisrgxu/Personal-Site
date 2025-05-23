@@ -17,6 +17,16 @@
                     <div className="p-4 text-center text-lg">I have a passion for developing innovative web applications that solve complex problems. Whether it&#39;s building a custom e-commerce platform or a cutting-edge web app, I&#39;m always ready for a new challenge. Let&#39;s create something amazing together!</div>
                 </div>
             </div>
+            <div 
+                className="mt-10 mb-5 md:mt-15 md:mb-20 text-md md:text-xl lg:text-3xl flex justify-center space-x-4 md:space-x-10 lg:space-x-20"
+                data-aos="fade-right"
+                data-aos-delay="700"
+            >
+                <a href="mailto:roxu1927@outlook.com" target="_blank" rel="noopener noreferrer">Email</a>
+                <a href="https://github.com/whoisrgxu" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/rogerxuprofile/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+            </div>
         </div>
         )
 }
