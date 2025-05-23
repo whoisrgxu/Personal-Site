@@ -41,35 +41,35 @@ const Header = () => {
           <li className="font-bold basis-1/2 text-lg shrink-0">Rong Gang (Roger) Xu</li>
           <li>
             <div className="relative inline-block group">
-              <div className="absolute left-[-0.3rem] right-[-0.3rem] top-1/2 h-[0.3em] -translate-y-1/2 rounded-full blur-xs bg-pink-600 opacity-0 group-hover:opacity-50 transition duration-300 z-0"></div>
+              <div className="absolute left-[-0.3rem] right-[-0.3rem] top-1/2 h-[0.3em] -translate-y-1/2 rounded-full blur-xs bg-pink-600 opacity-0 group-hover:opacity-100 transition duration-300 z-0"></div>
               <Link href="#about" className="relative z-10 no-underline visited:text-inherit hover:cursor-default" onClick={() => playClick()}>About
               </Link>
             </div>
           </li>
           <li>
             <div className="relative inline-block group">
-              <div className="absolute left-[-0.3rem] right-[-0.3rem] top-1/2 h-[0.3em] -translate-y-1/2 rounded-full blur-xs bg-pink-600 opacity-0 group-hover:opacity-50 transition duration-300 z-0"></div>
+              <div className="absolute left-[-0.3rem] right-[-0.3rem] top-1/2 h-[0.3em] -translate-y-1/2 rounded-full blur-xs bg-pink-600 opacity-0 group-hover:opacity-100 transition duration-300 z-0"></div>
               <Link href="#skills" className="relative z-10 no-underline visited:text-inherit hover:cursor-default" onClick={() => playClick()}>Skills
               </Link>
             </div>
           </li>
           <li>
             <div className="relative inline-block group">
-              <div className="absolute left-[-0.3rem] right-[-0.3rem] top-1/2 h-[0.3em] -translate-y-1/2 rounded-full blur-xs bg-pink-600 opacity-0 group-hover:opacity-50 transition duration-300 z-0"></div>
+              <div className="absolute left-[-0.3rem] right-[-0.3rem] top-1/2 h-[0.3em] -translate-y-1/2 rounded-full blur-xs bg-pink-600 opacity-0 group-hover:opacity-100 transition duration-300 z-0"></div>
               <Link href="#projects" className="relative z-10 no-underline visited:text-inherit hover:cursor-default" onClick={() => playClick()}>Projects
               </Link>
             </div>
           </li>
           <li>
             <div className="relative inline-block group">
-              <div className="absolute left-[-0.3rem] right-[-0.3rem] top-1/2 h-[0.3em] -translate-y-1/2 rounded-full blur-xs bg-pink-600 opacity-0 group-hover:opacity-50 transition duration-300 z-0"></div>
+              <div className="absolute left-[-0.3rem] right-[-0.3rem] top-1/2 h-[0.3em] -translate-y-1/2 rounded-full blur-xs bg-pink-600 opacity-0 group-hover:opacity-100 transition duration-300 z-0"></div>
               <Link href="#contact" className="relative z-10 no-underline visited:text-inherit hover:cursor-default" onClick={() => playClick()}>Contact
               </Link>
             </div>
           </li>
           <li>
             <div className="relative inline-block group">
-              <div className="absolute left-[-0.3rem] right-[-0.3rem] top-1/2 h-[0.3em] -translate-y-1/2 rounded-full blur-xs bg-pink-600 opacity-0 group-hover:opacity-50 transition duration-300 z-0 "></div>
+              <div className="absolute left-[-0.3rem] right-[-0.3rem] top-1/2 h-[0.3em] -translate-y-1/2 rounded-full blur-xs bg-pink-600 opacity-0 group-hover:opacity-100 transition duration-300 z-0 "></div>
               <button onClick={() => playClick()} className="z-10">
                 <Link href="/Resume.pdf" target="_blank" rel="noopener noreferrer" className="relative z-10 no-underline visited:text-inherit hover:cursor-default">Resume</Link>
               </button>
