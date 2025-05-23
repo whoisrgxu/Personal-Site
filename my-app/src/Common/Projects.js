@@ -16,6 +16,14 @@ const projects = [
     Image: "/NuPuzz.png",
   },
   {
+    Title: "Metropolitan Museum Artworks",
+    MadeWith: ["JavaScript", "React", "Next.js", "Node.js", "React-Bootstrap", "MongoDB"],
+    Description: "A web application that allows users to view and search artworks from the Metropolitan Museum of Art.",
+    Link: "https://metropolitan-museum-art-works.vercel.app/",
+    RepoLink: "https://github.com/whoisrgxu/Metropolitan-Museum-ArtWorks",
+    Image: "/Museum.png",
+  },
+  {
     Title: "Memory Fun Poker Game",
     MadeWith: ["React", "Node.js", "Next.js", "Bootstrap"],
     Description: "A web poker game that tests your memory through matching cards.",
