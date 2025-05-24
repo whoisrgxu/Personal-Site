@@ -1,6 +1,6 @@
 'use client';
 
-import './page.module.css';
+import Link from 'next/link';
 import BeautyButton from '@/components/BeautyButton';
 import About from '@/components/About';
 import Skills from '@/components/Skills';
@@ -14,11 +14,18 @@ import MouseOutlinedIcon from '@mui/icons-material/MouseOutlined';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 import Contact from '@/components/Contact';
 import {useSound} from '@/components/SoundProvider';
+import { useAtom} from 'jotai';
+import {isOpenState} from '@/Store/globalState';
+import MuteButton from '../components/SoundButton';
+import BedtimeIcon from '@mui/icons-material/Bedtime';
+import WbSunnyIcon from '@mui/icons-material/WbSunny';
 
 export default function Home() {
   const { theme, resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const { muted } = useSound();
+
+  const [isOpen, setIsOpen] = useAtom(isOpenState);
 
   useEffect(() => {
     setMounted(true);
@@ -36,6 +43,8 @@ export default function Home() {
 
 
   return (
+    <>
+    {!isOpen && (
     <div>
       <div className="lg:h-screen relative mb-10">
         <div className="flex flex-col lg:flex-row justify-center items-center mb-20 lg:mb-0">
@@ -103,5 +112,47 @@ export default function Home() {
         <Footer />
       </section>
     </div>
+    )}
+    {isOpen && (
+      <div className="fixed top-20 left-0 h-full w-64 bg-white dark:bg-gray-900 shadow-md z-50 flex flex-col items-start p-6 gap-4 transition-transform duration-300">
+        <Link href="#about" onClick={() => {
+                                    playClick();
+                                    setIsOpen(false);
+                                  }}
+        >
+          About
+        </Link>
+        <Link href="#skills" onClick={() => {
+                                    playClick();
+                                    setIsOpen(false);
+                                  }}
+        >
+          Skills
+        </Link>        
+        <Link href="#projects" onClick={() => {
+                                    playClick();
+                                    setIsOpen(false);
+                                  }}
+        >
+          Projects
+        </Link>        
+        <Link href="#contact" onClick={() => {
+                                    playClick();
+                                    setIsOpen(false);
+                                  }}
+        >
+          Contact
+        </Link>
+        <Link href="/Resume.pdf" onClick={() => {
+                                    playClick();
+                                    setIsOpen(false);
+                                  }}
+        >
+          Resume
+        </Link>
+        <div><MuteButton/></div>
+      </div>
+    )}
+  </>
   );
 }

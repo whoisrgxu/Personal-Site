@@ -18,10 +18,10 @@
                 </div>
             </div>
             <div 
-                className="mt-10 mb-5 md:mt-15 md:mb-20 text-md md:text-xl lg:text-3xl flex justify-center space-x-4 md:space-x-10 lg:space-x-20"
+                className="mt-10 mb-5 lg:mt-15 lg:mb-20 text-md md:text-xl lg:text-3xl flex justify-center space-x-4 md:space-x-10 lg:space-x-20"
                 data-aos="fade-right"
                 data-aos-delay="700"
-            >
+            > 
                 <a href="mailto:roxu1927@outlook.com" target="_blank" rel="noopener noreferrer">Email</a>
                 <a href="https://github.com/whoisrgxu" target="_blank" rel="noopener noreferrer">GitHub</a>
                 <a href="https://www.linkedin.com/in/rogerxuprofile/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
