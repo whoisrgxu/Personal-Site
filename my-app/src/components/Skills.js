@@ -3,7 +3,7 @@ import skillsByCategory from '../Common/Skills.js';
 export default function Skills() {
   return (
     <div id="skills" className="mt-14 flex flex-col items-start">
-      <h2 className="text-7xl mb-8 self-center">Skills</h2>
+      <h2 className="text-6xl md:text-7xl mb-8 self-center">Skills</h2>
       <div className="grid grid-cols-1">
         {skillsByCategory.map((categoryObj, index) => {
           return (

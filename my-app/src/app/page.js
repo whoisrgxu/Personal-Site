@@ -19,6 +19,7 @@ import {isOpenState} from '@/Store/globalState';
 import MuteButton from '../components/SoundButton';
 import ThemeMode from '@/components/ThemeMode';
 
+
 export default function Home() {
   const { theme, resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
@@ -48,9 +49,9 @@ export default function Home() {
       <div className="lg:h-screen relative mb-10">
         <div className="flex flex-col lg:flex-row justify-center items-center mb-20 lg:mb-0">
           <div className="lg:w-11/20 mt-12 relative flex flex-col z-10" >
-            <div className="absolute top-3/4 left-0 -translate-y-1/2 -translate-x-1/2 w-[32vw] h-[27vh] bg-gradient-to-bl from-sky-400 via-blue-500 to-indigo-50 blur-[130px] rounded-full pointer-events-none z-20 opacity-0 fade-in-50" style={{"animationDelay": "0.5s"}}></div>
+            <div className="absolute top-3/4 left-0 -translate-y-1/2 -translate-x-1/2 w-[32vw] h-[27vh] bg-gradient-to-bl from-sky-400 via-blue-500 to-indigo-50 blur-[130px] rounded-full pointer-events-none z-20 opacity-0 fade-in-50" style={{"animationDelay": "0.2s"}}></div>
             {/* Text and Button */}
-            <div className="relative text-xl z-10 opacity-0 fade-in" style={{"animationDelay": "1.5s"}}>
+            <div className="relative text-xl z-10 opacity-0 fade-in" style={{"animationDelay": "1s"}}>
               <p className="text-xl leading-relaxed">
                 <span className="opacity-70">Hello! I am</span>
                 <span className="text-3xl font-bold block mt-4">Roger Xu</span>

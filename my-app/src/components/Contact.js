@@ -1,7 +1,7 @@
  export default function Contact() {
     return (
         <div id="contact" className="relative flex flex-col mt-30 items-center">
-            <h2 className="text-7xl mb-16">Want To</h2>
+            <h2 className="text-6xl md:text-7xl mb-16">Want To</h2>
             <div className="absolute top-3/4 left-0 -translate-y-1/2 -translate-x-1/2 w-[20vw] h-[30vh] bg-gradient-to-br from-blue-500 via-pink-500 to-purple-500 opacity-50 blur-[130px] rounded-full pointer-events-none z-20"></div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-15 xl:gap-20 lg:place-items-center">
                 <div data-aos="fade-right">
