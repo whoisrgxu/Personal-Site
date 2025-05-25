@@ -11,12 +11,13 @@ import { useEffect } from 'react';
         AOS.init({
             duration: 1000, // default animation duration
             once: true,     // animate only once when entering view
+            disable: 'mobile', // disable animations on mobile devices
         });
     }, []);
 
     return (
         <div id="about" className="relative flex flex-col items-center">
-            <h2 className="text-7xl mb-8">About My</h2>
+            <h2 className="text-6xl md:text-7xl mb-8">About My</h2>
             <div className="absolute top-3/4 left-0 -translate-y-1/2 -translate-x-1/2 w-[20vw] h-[30vh] bg-gradient-to-br from-blue-500 via-pink-500 to-purple-500 opacity-50 blur-[130px] rounded-full pointer-events-none z-20"></div>
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 lg:place-items-center">
                 <div data-aos="fade-right">
