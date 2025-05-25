@@ -8,6 +8,8 @@ html[data-theme='dark'] button {
     background-color: black;
     color: white;
   }
+
+
   
 html {
   scroll-behavior: smooth;

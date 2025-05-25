@@ -18,7 +18,7 @@ import { useEffect } from 'react';
         <div id="about" className="relative flex flex-col items-center">
             <h2 className="text-7xl mb-8">About My</h2>
             <div className="absolute top-3/4 left-0 -translate-y-1/2 -translate-x-1/2 w-[20vw] h-[30vh] bg-gradient-to-br from-blue-500 via-pink-500 to-purple-500 opacity-50 blur-[130px] rounded-full pointer-events-none z-20"></div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:place-items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 lg:place-items-center">
                 <div data-aos="fade-right">
                     <div className="text-3xl text-center text-pink-600">Past</div>
                     <div className="p-4 text-center text-lg"> My career path prior to programming was built upon financial and business sectors until I came across Python which brought me into the world of technologies. What began as a hobby quickly grew into a strong passion for programming. Over the years of studying computer programming, I have developed a diverse set of skills for solving real-world problems by combining my technical abilities with cross-sector business experience.</div>

@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
                 <LinkedInIcon/>
               </a>
               {/* Vertical line */}
-              <div className="w-1 h-50 bg-black mt-4 lg:opacity-60"></div>              
+              <div className="w-1 h-50 mt-4 bg-black lg:opacity-60"></div>              
             </div>
           <main className="relative w-full max-w-[1920px] px-8 md:px-16 lg:px-32 mx-auto overflow-hidden">
             <FancyCursor/>
