@@ -19,7 +19,7 @@ export default function ProjectCard({index, project}) {
                 <div>
                     <ProjectImageFrame project={project}/>
                 </div>
-                <div className="flex flex-col h-full">
+                <div>
                     <div className="text-3xl text-bold mb-2 text-center lg:text-left">{project.Title}</div>
                     <div className="flex flex-wrap gap-2 mb-2 justify-center lg:justify-start">
                         <div className="text-lg text-nowrap text-center lg:text-left">Made with: </div>
@@ -28,7 +28,8 @@ export default function ProjectCard({index, project}) {
                         ))}
                     </div>
                     <div className="text-lg text-center lg:text-start">{project.Description}</div>
-                    <div className="flex gap-8 md:16 lg:gap-8 justify-center lg:justify-start mt-auto mb-2 pt-6">
+                    <div className="flex gap-8 md:16 lg:gap-8 justify-center lg:justify-start mt-auto lg:mb-2">
+
                         <a href={project.Link} target="_blank" rel="noopener noreferrer" className="no-underline">
                             <BeautyButton
                                 theme="light"
