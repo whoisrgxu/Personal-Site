@@ -17,8 +17,7 @@ import {useSound} from '@/components/SoundProvider';
 import { useAtom} from 'jotai';
 import {isOpenState} from '@/Store/globalState';
 import MuteButton from '../components/SoundButton';
-import BedtimeIcon from '@mui/icons-material/Bedtime';
-import WbSunnyIcon from '@mui/icons-material/WbSunny';
+import ThemeMode from '@/components/ThemeMode';
 
 export default function Home() {
   const { theme, resolvedTheme } = useTheme();
@@ -114,7 +113,7 @@ export default function Home() {
     </div>
     )}
     {isOpen && (
-      <div className="fixed top-20 left-0 h-full w-64 bg-white dark:bg-gray-900 shadow-md z-50 flex flex-col items-start p-6 gap-4 transition-transform duration-300">
+      <div className="fixed top-20 left-0 h-full w-64 shadow-md z-50 flex flex-col items-start p-6 gap-4 transition-transform duration-300">
         <Link href="#about" onClick={() => {
                                     playClick();
                                     setIsOpen(false);
@@ -150,7 +149,7 @@ export default function Home() {
         >
           Resume
         </Link>
-        <div><MuteButton/></div>
+        <div><ThemeMode/><MuteButton/></div>
       </div>
     )}
   </>
