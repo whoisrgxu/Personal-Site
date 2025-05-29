@@ -56,7 +56,7 @@ export default function Home() {
                 <span className="opacity-70">Hello! I am</span>
                 <span className="text-3xl font-bold block mt-4">Roger Xu</span>
                 <span className="text-pink-600 block my-4">
-                  Software Engineer <FiberManualRecordIcon fontSize="inherit" /> Systems Developer
+                  Software Engineer <FiberManualRecordIcon fontSize="inherit" /> Full Stack Developer
                 </span>
                 I&#39;m a passionate Software Engineer based in Toronto, Canada, with a background that blends business and technology. I focus on building practical, user-focused software and applications that solve real-world problems and deliver meaningful impact. In my free time, I enjoy exploring new technologies and tools, and occasionally contribute to open-source projects.
                 I&#39;m currently seeking new opportunities to apply my skills and contribute to impactful work in the tech industry. If you&#39;re interested in connecting or collaborating, feel free to reach out!
@@ -114,43 +114,43 @@ export default function Home() {
     </div>
     )}
     {isOpen && (
-      <div className="fixed top-20 left-0 h-full w-64 shadow-md z-50 flex flex-col items-start p-6 gap-4 transition-transform duration-300">
-        <Link href="#about" onClick={() => {
+      <div className="fixed top-20 left-0 h-full w-64 z-50 flex flex-col items-start p-6 gap-4 transition-transform duration-300">
+        <Link href="#about" className="relative inline-block px-10 py-2 text-xl font-medium border-t-2 border-r-2 border-b-2 border-pink-600" onClick={() => {
                                     playClick();
                                     setIsOpen(false);
                                   }}
         >
           About
         </Link>
-        <Link href="#skills" onClick={() => {
+        <Link href="#skills" className="relative inline-block px-10 py-2 text-xl font-medium border-t-2 border-r-2 border-b-2 border-pink-600" onClick={() => {
                                     playClick();
                                     setIsOpen(false);
                                   }}
         >
           Skills
         </Link>        
-        <Link href="#projects" onClick={() => {
+        <Link href="#projects" className="relative inline-block px-10 py-2 text-xl font-medium border-t-2 border-r-2 border-b-2 border-pink-600" onClick={() => {
                                     playClick();
                                     setIsOpen(false);
                                   }}
         >
           Projects
         </Link>        
-        <Link href="#contact" onClick={() => {
+        <Link href="#contact" className="relative inline-block px-10 py-2 text-xl font-medium border-t-2 border-r-2 border-b-2 border-pink-600" onClick={() => {
                                     playClick();
                                     setIsOpen(false);
                                   }}
         >
           Contact
         </Link>
-        <Link href="/Resume.pdf" onClick={() => {
+        <Link href="/Resume.pdf" className="relative inline-block px-10 py-2 text-xl font-medium border-t-2 border-r-2 border-b-2 border-pink-600" onClick={() => {
                                     playClick();
                                     setIsOpen(false);
                                   }}
         >
           Resume
-        </Link>
-        <div><ThemeMode/><MuteButton/></div>
+        </Link >
+        <div className="relative inline-block px-10 py-2 text-xl font-medium border-t-2 border-r-2 border-b-2 border-pink-600"><ThemeMode/><MuteButton/></div>
       </div>
     )}
   </>
