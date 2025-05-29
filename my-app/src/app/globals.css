@@ -9,7 +9,9 @@ html[data-theme='dark'] button {
     color: white;
   }
 
-
+.clip-diagonal {
+  clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+}
   
 html {
   scroll-behavior: smooth;
