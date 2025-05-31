@@ -26,7 +26,7 @@ import { useEffect } from 'react';
                 </div>
                 <div data-aos="fade-right" data-aos-delay="300">
                     <div className="text-3xl text-center text-pink-600">Present</div>
-                    <div className="p-4 text-center text-lg">Building on the foundation of my passion and training, I recently completed a co-op as a System Developer at HOOPP, where I applied my skills in a real-world, enterprise-level environment.Now, I&#39;m actively seeking new opportunities where I can grow as a developer and contribute meaningfully to a team. In the meantime, I continue to expand my knowledge through self-directed learning, sharpening my technical expertise and staying current with modern development tools and practices.</div>
+                    <div className="p-4 text-center text-lg">Building on the foundation of my passion and training, I recently completed a co-op as a System Developer at HOOPP, where I applied my skills in a real-world, enterprise-level environment. Now, I&#39;m actively seeking new opportunities where I can grow as a developer and contribute meaningfully to a team. In the meantime, I continue to expand my knowledge through self-directed learning, sharpening my technical expertise and staying current with modern development tools and practices.</div>
                 </div>
                 <div data-aos="fade-right" data-aos-delay="600">
                     <div className="text-3xl text-center text-pink-600">Future</div>
