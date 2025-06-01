@@ -1,4 +1,12 @@
 const projects = [
+    {
+    Title: "Smart Cover Letter Generator",
+    MadeWith: ["React", "Next.js", "TailwindCss", "Material UI", "MongoDB", "Node.js"],
+    Description: "A web application that generates personalized cover letters based on user resume and job descriptions.",
+    Link: "https://smart-cover-letter.vercel.app/",
+    RepoLink: "https://github.com/whoisrgxu/smart-cover-letter/",
+    Image: "/MealKit.png",
+  },
   {
     Title: "MealKit Delivery App",
     MadeWith: ["JavaScript", "Node.js", "Express", "EJS", "MongoDB", "TailwindCss", "DaisyUI"],
