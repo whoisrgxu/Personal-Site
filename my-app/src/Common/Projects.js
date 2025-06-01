@@ -1,8 +1,8 @@
 const projects = [
     {
-    Title: "Smart Cover Letter Generator",
+    Title: "CoverCraft",
     MadeWith: ["React", "Next.js", "TailwindCss", "Material UI", "MongoDB", "Node.js"],
-    Description: "A web application that generates personalized cover letters based on user resume and job descriptions.",
+    Description: "CoverCraft is an AI-powered tool designed to help job seekers quickly create tailored, professional cover letters. Simply paste your resume and the job description, and our advanced AI will generate a personalized cover letter that highlights your most relevant skills and experience. Save time, stand out to recruiters, and make your job applications easier than ever with Smart Cover Letter.",
     Link: "https://smart-cover-letter.vercel.app/",
     RepoLink: "https://github.com/whoisrgxu/smart-cover-letter/",
     Image: "/covercl.png",
