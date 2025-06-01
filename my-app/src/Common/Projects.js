@@ -5,7 +5,7 @@ const projects = [
     Description: "A web application that generates personalized cover letters based on user resume and job descriptions.",
     Link: "https://smart-cover-letter.vercel.app/",
     RepoLink: "https://github.com/whoisrgxu/smart-cover-letter/",
-    Image: "/smart-cover-letter.png",
+    Image: "/covercl.png",
   },
   {
     Title: "MealKit Delivery App",
