@@ -1,8 +1,8 @@
 const projects = [
     {
     Title: "JobPilot",
-    MadeWith: ["TypeScript", "React", "Next.js", "TailwindCss", "Material UI", "MongoDB", "Gemini Developer API"],
-    Description: "JobPilot is an AI-powered tool designed to help job seekers quickly create tailored, professional cover letters. Simply paste your resume and the job description, and our advanced AI will generate a personalized cover letter that highlights your most relevant skills and experience. Save time, stand out to recruiters, and make your job applications easier than ever with Smart Cover Letter.",
+    MadeWith: ["TypeScript", "React", "Next.js", "TailwindCss", "Material UI", "MongoDB", "Gemini Developer API", "OpenAI API"],
+    Description: "JobPilot is an AI-powered tool that helps job seekers quickly analyze how well their resume matches a job posting. Simply paste your resume and the job description, and our advanced AI generates a personalized feedback dashboard showing your overall job-fit score, strengths, weaknesses, and actionable suggestions for improvement. Save time, refine your resume, and make your job applications smoother and more effective with this smart job-fit analyzer.",
     Link: "https://jobpilot.rogerxu.dev/",
     RepoLink: "https://github.com/whoisrgxu/smart-cover-letter/",
     Image: "/JobPilot.png",
