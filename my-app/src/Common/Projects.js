@@ -16,6 +16,13 @@ const projects = [
     Image: "/MealKit.png",
   },
   {
+    Title: "My Repo Reader",
+    MadeWith: ["Go (Golang)", "Git Command-Line Interface (CLI)", "Text Processing (UTF-8)"],
+    Description: "A lightweight CLI tool that turns any code folder into a clean, shareable Markdown snapshot. It respects nested .gitignore rules and common build/cache folders, skips binary and lock files, and produces a tidy tree structure with optional file contents. Summaries are accurate because only Git-tracked text files are counted.This makes it easy to generate reproducible context for LLMs, pull requests, or documentation — complementing IDE assistants with portable, auditable snapshots that can be shared across teams and tools.",
+    RepoLink: "https://github.com/whoisrgxu/My_Repo_Reader",
+    Image: "/My_Repo_Reader.png",
+  },
+  {
     Title: "Classic Puzzle Game",
     MadeWith: ["HTML", "CSS", "JavaScript", "React", "Node.js"],
     Description: "An interactive sliding puzzle game built with React, featuring a responsive design and engaging visual and audio feedback. Players solve the classic numbered tile puzzle by sliding pieces into the empty space, with each game offering a randomly generated board and instant restart functionality.",

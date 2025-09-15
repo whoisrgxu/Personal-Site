@@ -29,8 +29,9 @@ export default function ProjectCard({index, project}) {
                     </div>
                     <div className="text-lg text-center lg:text-start">{project.Description}</div>
                     <div className="flex gap-8 md:16 lg:gap-8 justify-center lg:justify-start mt-auto lg:mb-2">
+                        {project.Title !== "My Repo Reader" &&
+                        (<a href={project.Link} target="_blank" rel="noopener noreferrer" className="no-underline">
 
-                        <a href={project.Link} target="_blank" rel="noopener noreferrer" className="no-underline">
                             <BeautyButton
                                 theme="light"
                                 text={
@@ -40,7 +41,7 @@ export default function ProjectCard({index, project}) {
                                     </>
                                 }
                             />
-                        </a>
+                        </a>)}
                         <a href={project.RepoLink} target="_blank" rel="noopener noreferrer" className="no-underline">
                             <BeautyButton
                                 theme="light"
