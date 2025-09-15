@@ -17,12 +17,15 @@ const skillsByCategory = [
       "Tailwind CSS",
       "Bootstrap",
       "Material UI",
-      "DaisyUI"
+      "DaisyUI",
+      "Shadcn"
     ],
   },
   {
     category: "Back End",
     skills: [
+      "Java",
+      "Sprint Boot",
       "Node.js",
       "Express.js",
       "MongoDB",
@@ -30,8 +33,9 @@ const skillsByCategory = [
       "PostgreSQL",
       "RESTful APIs",
       "JWT",
-      "C++",
-      "Python"
+      "OAuth2",
+      "Python",
+      "FastAPI"
     ],
   },
   {
@@ -42,7 +46,8 @@ const skillsByCategory = [
       "Agile",
       "Scrum",
       "CI/CD",
-      "YAML",
+      "GitHub Actions",
+      "Jenkins",
       "Azure DevOps",
       "AWS (basic)",
       "SharePoint",
